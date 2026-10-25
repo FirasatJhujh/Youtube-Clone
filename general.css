@@ -1,0 +1,61 @@
+.all-center {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hidden {
+    visibility: hidden;
+}
+.all-center-col {
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loading {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    display: none;
+    animation-name: loading-bar;
+    animation-duration:3s ;
+    /* animation-timing-function: ease-out; */
+}
+
+@keyframes loading-bar {
+    0% {
+        width: 0vw;
+        height: 3px;
+        background-color: lightgreen;
+        display: block;
+    }
+    25% {
+        width: 25vw;
+        height: 3px;
+        background-color: green;
+                display: block;
+
+    }
+    50% {
+        width: 50vw;
+        height: 3px;
+        background-color:darkgreen;
+                display: block;
+
+    }
+    75% {
+        width: 75vw;
+        height: 3px;
+        background-color: lightgreen;
+                display: block;
+
+    }
+    100% {
+        width: 100vw;
+        height: 3px;
+        background-color: red;
+                display: block;
+
+    }
+}
